@@ -462,9 +462,10 @@ function DashboardLayout({
 
       {/* Main Content Area */}
       <div
-        className="flex-1 flex flex-col overflow-hidden transition-all duration-300"
+        className="flex flex-col overflow-hidden transition-all duration-300"
         style={{
           marginLeft: sidebarCollapsed ? '5rem' : '14rem',
+          width: sidebarCollapsed ? 'calc(100% - 5rem)' : 'calc(100% - 14rem)',
         }}
       >
         {/* Header */}
